@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "ROS: Build", "type": "shell", "command": "./scripts/build.sh", "group": {"kind": "build", "isDefault": true}, "problemMatcher": []},
+    {"label": "ROS: Run exercise", "type": "shell", "command": "./scripts/run.sh", "problemMatcher": [], "presentation": {"panel": "dedicated"}},
+    {"label": "ROS: Unit tests", "type": "shell", "command": "./scripts/test.sh", "group": "test", "problemMatcher": []},
+    {"label": "ROS: Full verification", "type": "shell", "command": "./scripts/test.sh --integration", "group": "test", "problemMatcher": []}
+  ]
+}

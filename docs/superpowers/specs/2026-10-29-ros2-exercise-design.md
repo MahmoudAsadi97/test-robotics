@@ -1,0 +1,9 @@
+# ROS 2 Jazzy introductory lab
+
+Implement the uploaded 56-slide course in this empty repository, with runnable Python examples and the final turtlesim border exercise. Target Windows VS Code connected to WSL 2 Ubuntu 24.04, confirmed by the user. The repository itself is the colcon workspace (src/, generated build/install/log). Use the existing isolated checkout.
+
+Final exercise (slide 56): publish geometry_msgs/Twist on /turtle1/cmd_vel, subscribe to turtlesim/Pose on /turtle1/pose, start forward along x, stop at a safe border margin, rotate to a random inward heading, resume forward, repeat. Corners must work. A heading is selected once per border encounter, with a recovery phase until clear of the border. Defaults keep turtle inside the roughly 11.09-unit square. Missing/stale pose stops commands. Seeded randomness is available for reproducible tests; ordinary runs use fresh randomness.
+
+Approach chosen by implementation judgment: a small pure-Python motion state machine plus a thin rclpy node, rather than a timer-only blind turn or a large navigation stack. Pose feedback makes turns verifiable; pure logic enables fast boundary/corner tests. Include a launch file starting real turtlesim and the controller, optional headless mode for automated validation. Preserve separate educational timer, string publisher, circle publisher and pose subscriber nodes.
+
+Deliverables: ROS package, example nodes, launch configuration, setup/build/run/test helpers, VS Code tasks/settings, numbered slide guide with corrected commands, README with exact WSL instructions, repeatable tests and an honest validation record. Do not claim all possible systems guaranteed. No hardware/Webots required by this exercise. No secrets needed. Only Git-tracked source/config/docs belong in delivery; generated outputs are ignored.

@@ -1,0 +1,207 @@
+{
+  "passed": true,
+  "ros_domain_id": 157,
+  "real_ros_and_turtlesim": true,
+  "launch_command": [
+    "ros2",
+    "launch",
+    "my_robot_controller",
+    "exercise.launch.py",
+    "headless:=true",
+    "seed:=7",
+    "linear_speed:=2.0",
+    "angular_speed:=2.0"
+  ],
+  "checks": {
+    "initial_positive_x": {
+      "delta_x": 1.312,
+      "delta_y": 0.0,
+      "heading": 0.0
+    },
+    "natural_border_cycles": [
+      {
+        "start_time": 1175.063061293,
+        "finish_time": 1176.862046388,
+        "duration_seconds": 1.799,
+        "position": [
+          10.3444,
+          5.5444
+        ],
+        "resumed_heading": -2.82972,
+        "turn_translation": 0.032
+      },
+      {
+        "start_time": 1181.894853571,
+        "finish_time": 1183.760983361,
+        "duration_seconds": 1.866,
+        "position": [
+          0.7507,
+          2.4514
+        ],
+        "resumed_heading": 0.17095,
+        "turn_translation": 0.0
+      },
+      {
+        "start_time": 1188.62833602,
+        "finish_time": 1190.394549986,
+        "duration_seconds": 1.766,
+        "position": [
+          10.3369,
+          4.1063
+        ],
+        "resumed_heading": 2.92904,
+        "turn_translation": 0.032
+      }
+    ],
+    "walls_corners_and_angle_wrap": [
+      {
+        "case": "left_wrap_positive_pi",
+        "delta_x": 0.95883,
+        "delta_y": 0.04731,
+        "start_time": 1191.061406805,
+        "finish_time": 1192.960992949,
+        "duration_seconds": 1.9,
+        "position": [
+          0.486,
+          5.5451
+        ],
+        "resumed_heading": 0.0493,
+        "turn_translation": 0.0
+      },
+      {
+        "case": "right",
+        "delta_x": -0.92489,
+        "delta_y": -0.07586,
+        "start_time": 1193.762210417,
+        "finish_time": 1195.661390503,
+        "duration_seconds": 1.899,
+        "position": [
+          10.5709,
+          5.5444
+        ],
+        "resumed_heading": -3.05975,
+        "turn_translation": 0.032
+      },
+      {
+        "case": "bottom",
+        "delta_x": -0.49837,
+        "delta_y": 0.74461,
+        "start_time": 1196.461629965,
+        "finish_time": 1198.097456319,
+        "duration_seconds": 1.636,
+        "position": [
+          5.5444,
+          0.518
+        ],
+        "resumed_heading": 2.16062,
+        "turn_translation": 0.0
+      },
+      {
+        "case": "top",
+        "delta_x": -0.1221,
+        "delta_y": -0.91993,
+        "start_time": 1198.894855292,
+        "finish_time": 1200.794432741,
+        "duration_seconds": 1.9,
+        "position": [
+          5.5444,
+          10.6029
+        ],
+        "resumed_heading": -1.70275,
+        "turn_translation": 0.032
+      },
+      {
+        "case": "bottom_left",
+        "delta_x": 0.56795,
+        "delta_y": 0.693,
+        "start_time": 1201.628800078,
+        "finish_time": 1203.528462301,
+        "duration_seconds": 1.9,
+        "position": [
+          0.5047,
+          0.5047
+        ],
+        "resumed_heading": 0.88424,
+        "turn_translation": 0.032
+      },
+      {
+        "case": "bottom_right",
+        "delta_x": -0.46482,
+        "delta_y": 0.8032,
+        "start_time": 1204.328653536,
+        "finish_time": 1206.127509042,
+        "duration_seconds": 1.799,
+        "position": [
+          10.5615,
+          0.5274
+        ],
+        "resumed_heading": 2.09542,
+        "turn_translation": 0.0
+      },
+      {
+        "case": "top_left",
+        "delta_x": 0.60252,
+        "delta_y": -0.66316,
+        "start_time": 1206.928077728,
+        "finish_time": 1208.86132163,
+        "duration_seconds": 1.933,
+        "position": [
+          0.5047,
+          10.5841
+        ],
+        "resumed_heading": -0.83327,
+        "turn_translation": 0.032
+      },
+      {
+        "case": "top_right",
+        "delta_x": -0.3138,
+        "delta_y": -0.87333,
+        "start_time": 1209.661713001,
+        "finish_time": 1211.361116472,
+        "duration_seconds": 1.699,
+        "position": [
+          10.5615,
+          10.5615
+        ],
+        "resumed_heading": -1.91575,
+        "turn_translation": 0.0
+      },
+      {
+        "case": "left_wrap_negative_pi",
+        "delta_x": 0.91325,
+        "delta_y": -0.16478,
+        "start_time": 1212.161386348,
+        "finish_time": 1214.027933496,
+        "duration_seconds": 1.867,
+        "position": [
+          0.518,
+          5.5441
+        ],
+        "resumed_heading": -0.17851,
+        "turn_translation": 0.032
+      }
+    ],
+    "stale_pose": {
+      "stop_delay_seconds": 0.516,
+      "late_zero_commands": 12,
+      "resumed_after_pose_returned": true
+    },
+    "shutdown": {
+      "zero_twist_received": true
+    },
+    "wall_collisions": 0
+  },
+  "pose_messages": 2650,
+  "command_messages": 1305,
+  "observed_position_bounds": {
+    "x": [
+      0.48600322008132935,
+      10.57088851928711
+    ],
+    "y": [
+      0.5047451853752136,
+      10.602889060974121
+    ]
+  },
+  "duration_seconds": 45.212
+}

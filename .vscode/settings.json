@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "python.analysis.extraPaths": ["${workspaceFolder}/src/my_robot_controller", "/opt/ros/jazzy/lib/python3.12/site-packages"],
+  "files.exclude": {"**/__pycache__": true},
+  "search.exclude": {"build": true, "install": true, "log": true},
+  "terminal.integrated.defaultProfile.linux": "bash"
+}

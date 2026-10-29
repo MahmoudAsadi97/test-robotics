@@ -1,0 +1,26 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-10-29-14-49-49-608549-4641a0ab2683-799
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [turtlesim_node-1]: process started with pid [802]
+[INFO] [border_controller-2]: process started with pid [803]
+[turtlesim_node-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[turtlesim_node-1] [INFO] [1793285389.693250033] [turtlesim]: Starting turtlesim with node name /turtlesim
+[turtlesim_node-1] [INFO] [1793285389.699410587] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]
+[border_controller-2] [INFO] [1793285389.888047414] [border_controller]: Waiting for /turtle1/pose; initial motion is forward (+x).
+[border_controller-2] [INFO] [1793285392.376309347] [border_controller]: Border turn 1: random heading -2.866 rad
+[border_controller-2] [INFO] [1793285399.209523050] [border_controller]: Border turn 2: random heading 0.207 rad
+[border_controller-2] [INFO] [1793285405.942879628] [border_controller]: Border turn 3: random heading 2.965 rad
+[border_controller-2] [INFO] [1793285408.376139072] [border_controller]: Border turn 4: random heading 0.011 rad
+[border_controller-2] [INFO] [1793285411.076675419] [border_controller]: Border turn 5: random heading -3.099 rad
+[border_controller-2] [INFO] [1793285413.776177541] [border_controller]: Border turn 6: random heading 2.124 rad
+[border_controller-2] [INFO] [1793285416.209616387] [border_controller]: Border turn 7: random heading -1.667 rad
+[border_controller-2] [INFO] [1793285418.942958343] [border_controller]: Border turn 8: random heading 0.849 rad
+[border_controller-2] [INFO] [1793285421.643137173] [border_controller]: Border turn 9: random heading 2.133 rad
+[border_controller-2] [INFO] [1793285424.242777006] [border_controller]: Border turn 10: random heading -0.796 rad
+[border_controller-2] [INFO] [1793285426.976272067] [border_controller]: Border turn 11: random heading -1.954 rad
+[border_controller-2] [INFO] [1793285429.476114789] [border_controller]: Border turn 12: random heading -0.143 rad
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [border_controller-2]: sending signal 'SIGINT' to process[border_controller-2]
+[INFO] [turtlesim_node-1]: sending signal 'SIGINT' to process[turtlesim_node-1]
+[turtlesim_node-1] [INFO] [1793285433.440948453] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [turtlesim_node-1]: process has finished cleanly [pid 802]
+[INFO] [border_controller-2]: process has finished cleanly [pid 803]

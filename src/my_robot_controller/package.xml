@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_robot_controller</name>
+  <version>1.0.0</version>
+  <description>ROS 2 Jazzy introductory examples and a pose-driven turtlesim border controller.</description>
+  <maintainer email="maintainer@example.com">Robotics lab maintainer</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>rcl_interfaces</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>turtlesim</depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <test_depend>python3-pytest</test_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>
